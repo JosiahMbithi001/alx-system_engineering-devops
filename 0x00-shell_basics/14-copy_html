@@ -1,2 +1,2 @@
 #!/bin/bash
-cp./*.HTML "$(ls -t . | head -1)" ../
+cp -nu *.html
