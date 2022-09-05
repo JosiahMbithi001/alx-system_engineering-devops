@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 cw 
+=======
+find . -type d ! -path . -print | wc -l
+>>>>>>> 0c4e3e2a09a0ef9f4a5b41dcb92358f23618257b
