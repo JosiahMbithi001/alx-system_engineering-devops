@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This Script prints "Best School" using until Condition
+
+i=0
+until [ "$i" -eq 10 ];
+do
+	echo "Best School"
+	((i++))
+done
