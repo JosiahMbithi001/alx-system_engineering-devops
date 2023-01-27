@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This Bash Script Displays its own PID
+
+echo "$(ps)"
