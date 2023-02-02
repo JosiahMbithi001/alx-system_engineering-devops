@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This Bash Script displays all IPv4 Addresses in a machine
+
+ip=$(ifconfig | awk '/inet / {print $2}')
+
+for i in $ip
+do
+        echo $i
+done 
