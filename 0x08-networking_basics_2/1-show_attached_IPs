@@ -5,5 +5,5 @@ ip=$(ifconfig | awk '/inet / {print $2}')
 
 for i in $ip
 do
-        echo $i
+        echo "$i"
 done 
