@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#This Script Makes A  Custom 404 Page
 # Install Nginx
 sudo apt-get update
 sudo apt-get install nginx -y
