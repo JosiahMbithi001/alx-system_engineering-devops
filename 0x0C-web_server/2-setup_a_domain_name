@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This script displays the The new Domain
+
+echo "Restinc.tech"
