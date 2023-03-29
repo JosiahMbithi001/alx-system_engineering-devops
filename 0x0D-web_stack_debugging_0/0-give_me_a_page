@@ -1,0 +1,4 @@
+#!usr/bin/env bash
+# This Script is for Debugging a Webstack
+sudo service apache status
+sudo service apache start
