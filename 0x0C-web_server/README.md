@@ -17,4 +17,5 @@ HTML 404 Not Found
 https://moz.com/learn/seo/redirection
 Log Files
 https://www.cyberciti.biz/faq/ubuntu-linux-gnome-system-log-viewer/
-
+https:https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html
+Https Cookies: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
