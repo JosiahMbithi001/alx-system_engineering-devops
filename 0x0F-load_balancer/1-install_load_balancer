@@ -9,7 +9,7 @@ sudo apt-get update
 sudo apt-get install haproxy -y
 
 #Start HAProxy
-sudo service haproxy start
+#sudo service haproxy start
 
 #Configure HAProxy Configuration File
 sudo tee -a /etc/haproxy/haproxy.cfg > dev/null <<EOT
