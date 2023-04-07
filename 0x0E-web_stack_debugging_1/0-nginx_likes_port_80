@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#This Script removes the default file in nginx/sites-enabled
+# and creates a symbolic link to sites-available
+
+#Remove The Sites-Enabled/default file
+rm /etc/nginx/sites-enabled/default
+
+#Create A Symbolic Link
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
+#Restart Nginx
+service nginx restart
