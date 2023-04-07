@@ -9,4 +9,3 @@ https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-
 https://www.techopedia.com/definition/27178/http-header
 #HAProxy Packages:
 https://haproxy.debian.net/
-
