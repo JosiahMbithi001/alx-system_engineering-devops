@@ -1,0 +1,10 @@
+#A Task to configure ufw in web-01
+
+"""Allow ssh Cnnection"""
+sudo ufw allow 22
+
+"""Allow HTTPS Connection"""
+sudo ufw allow 443
+
+"""Allow HTTP Connection"""
+sudo ufw allow 80
