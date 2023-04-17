@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-#This Script runs who ami command as passed in the second arguement
+#This Script runs whoami command to user who is passed in the second arguement
 sudo -u $1 whoami
