@@ -1,1 +1,11 @@
-sudo -u $1 whoami
+#!/usr/bin/env bash
+# This Script runs whoami on Different Users entered as First Arguement
+
+user=$1
+
+if [ "$#" -eq 1 ]
+then
+	su "$user" -c whoami
+else
+	whoami
+fi
