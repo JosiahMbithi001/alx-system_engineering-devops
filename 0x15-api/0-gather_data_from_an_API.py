@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This Script gets Dta from a URL &
+This Script gets Data from a URL &
 Prints Titles An Employee has Written
 """
 import requests
@@ -26,6 +26,7 @@ if __name__ == "__main__":
     """Gets The Emloyees To Do"""
     user_todo = requests.get(todo_url)
 
+    """Converts Data to json Format"""
     user_todo = user_todo.json()
 
     for item in user_todo:
