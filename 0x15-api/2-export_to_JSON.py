@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """
 This Script gets Data from a URL &
-Prints Titles An Employee has Written in CSV Format
-and Exports to A CSV File
+Prints Titles An Employee has Written in json Format
+and Exports to A json File
 """
 import csv
+import json
 import requests
 from sys import argv
 
@@ -32,11 +33,18 @@ if __name__ == "__main__":
     user_todo = user_todo.json()
 
     """Output FileName"""
-    file_output = user_id + ".csv"
+    file_output = user_id + ".json"
 
-    with open(file_output, 'w') as csvfile:
-        for item in user_todo:
-            csvfile.write('"{}","{}","{}","{}"\n'.format(item.get('userId'),
-                                                         user_name, item.get(
-                                                             'completed'),
-                                                         item.get('title')))
+    """Dictionary Containing Date"""
+    my_dict = {}
+    my_dict[user_id] = []
+
+    for item in user_todo:
+        in_dict = {}
+        in_dict["task"] = item.get("title")
+        in_dict["completed"] = item.get("completed")
+        in_dict["username"] = user_name
+        my_dict[user_id].append(in_dict)
+
+        with open(file_output, 'w') as f:
+            json.dump(my_dict, f)
