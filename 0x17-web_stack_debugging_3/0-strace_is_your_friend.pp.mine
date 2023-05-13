@@ -1,0 +1,7 @@
+#This Puppet Script Corrects an Apache2 php
+#Configuration Script
+
+exec { "replace_line":
+	command => "sed -i 's/.phpp/.php/' /var/www/html/wp-settings.php"
+	#path => ['/bin','/usr/bin']
+}
