@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Kills a process using trap
+
+trap 'echo "I am Invincible!!!"' SIGTERM
+while ((1))
+do
+	echo "To infinity and beyond"
+	sleep 2
+done

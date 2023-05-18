@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#This Script dumps all SQL Databases to backup.sql & compresses to a .tgz archive
+
+#Deination of user to dump, password and output file
+USER='root'
+BACKUP='backup.sql'
+
+#Dumps All Databases to backup.sql
+mysqldump -u ${USER} -p{$1} --all-databases > backup.sql
+
+#Compress a File
+tar -czf $(date +%d-%m-%Y).tar.gz ${BACKUP}

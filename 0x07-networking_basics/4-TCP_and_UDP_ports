@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This Bas Script only prints listening sockets  and their PIDs
+
+netstat -lp

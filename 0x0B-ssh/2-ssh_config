@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#This Script edits Client Configuration
+Host 34.227.101.223
+ IdentityFile ~/.ssh/school
+ PasswordAuthentication no
